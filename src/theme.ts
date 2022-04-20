@@ -1,6 +1,15 @@
 import { createTheme } from '@material-ui/core/';
 
 export const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
   palette: {
     primary: {
       main: "#252C6A",
@@ -47,7 +56,8 @@ export const theme = createTheme({
         borderRadius: "25px",
         border: "2px solid #EB882C",
         boxShadow: "0px 8px 0px #EB882C",
-        width: "215px",
+        width: "18vw",
+        minWidth: "225px",
         height: "55px",
         "&:hover": {
           backgroundColor: "#94A3B8",
@@ -76,7 +86,8 @@ export const theme = createTheme({
         borderRadius: "25px",
         border: "2px solid #673FDA",
         boxShadow: "0px 8px 0px #673FDA",
-        width: "215px",
+        width: "18vw",
+        minWidth: "225px",
         height: "55px",
         "&:hover": {
           backgroundColor: "#94A3B8",

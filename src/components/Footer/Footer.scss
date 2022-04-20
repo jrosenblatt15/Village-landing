@@ -1,7 +1,14 @@
 .footer-container {
-  padding: 75px;
+  padding: 50px;
+
+  &.smaller {
+    padding: 15px;
+  }
 }
 
 .sublink-text {
   color: #525252;
+  &:hover {
+    color: #94A3B8;
+  }
 }

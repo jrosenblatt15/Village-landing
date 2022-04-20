@@ -1,7 +1,20 @@
 .headline-container {
-  margin-bottom: 125px;
+
+  .subtext {
+    &.smaller {
+      h5 {
+        text-align: center;
+      }
+    }
+  }
 }
 
-#apply {
-  margin-right: 25px;
+.headline-button {
+  #apply {
+    margin-right: 25px;
+
+    &.smaller {
+      margin-right: 0px;
+    }
+  }
 }
