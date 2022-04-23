@@ -21,7 +21,7 @@ export const InfoBoxes = () => {
           </Grid>
           <Grid item>
             <Typography variant="body1">
-              Village uses <span className="blue">smart contracts</span> to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling <span className="purple">socially conscious investors to support inspiring causes</span> while borrowers appreciate <span className="orange">easier access to capital at improved rates</span>.
+              Village uses <span className="blue">smart contracts</span> to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling <span className="blue">socially conscious investors to support inspiring causes</span> while borrowers appreciate <span className="blue">easier access to capital at improved rates</span>.
             </Typography>
           </Grid>
         </Grid>
@@ -43,7 +43,7 @@ export const InfoBoxes = () => {
               </Grid>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="white-text" variant="body1" align="center">
+              <Typography className="white-text" variant="body2" align="center">
                 Tap into a new type of yield by committing capital to a borrower’s impact fund. For every cause, there will be a new fund for you to invest in.
               </Typography>
             </AccordionDetails>
@@ -67,7 +67,7 @@ export const InfoBoxes = () => {
                 </Grid>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="white-text" variant="body1" align="center">
+              <Typography className="white-text" variant="body2" align="center">
                 Impact-focused businesses, investment funds, and other types of institutions are likely eligible to borrow through Village! Head to our Borrower Form or Contact Us to start the process.
               </Typography>
             </AccordionDetails>
@@ -91,7 +91,7 @@ export const InfoBoxes = () => {
               </Grid>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="white-text" variant="body1" align="center">
+              <Typography className="white-text" variant="body2" align="center">
                 Impact investments are made with the goal of generating measurable social and environmental impact alongside a financial return.
               </Typography>
             </AccordionDetails>
