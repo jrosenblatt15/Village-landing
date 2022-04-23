@@ -114,3 +114,54 @@
     top: 30%;
   }
 }
+
+.mobile-info-boxes-container {
+  padding-top: 65px;
+
+  .mobile-impact {
+    padding: 15px;
+    padding-bottom: 40px;
+  }
+
+  .mobile-invest-accordion {
+    .MuiAccordionSummary-root {
+      background-color: #398562;
+    }
+  
+    .MuiCollapse-root {
+      background-color: #398562;
+    }
+  }
+  
+  .mobile-borrow-accordion {
+    .MuiAccordionSummary-root {
+      background-color: #375145;
+    }
+  
+    .MuiCollapse-root {
+      background-color: #375145;
+    }
+  }
+  
+  .mobile-impact-accordion {
+    .MuiAccordionSummary-root {
+      background-color: #3E6955;
+    }
+  
+    .MuiCollapse-root {
+      background-color: #3E6955;
+    }
+  }
+
+  .blue {
+    color: #1CA2ED;
+  }
+
+  .purple {
+    color: #9184FF;
+  }
+
+  .orange {
+    color: #EB853B;
+  }
+}

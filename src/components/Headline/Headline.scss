@@ -18,3 +18,16 @@
     }
   }
 }
+
+.mobile-headline-container {
+  padding: 15px;
+
+  .MuiGrid-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .mobile-headline-buttons {
+    padding: 10px;
+  }
+}

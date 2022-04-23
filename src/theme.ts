@@ -56,7 +56,7 @@ export const theme = createTheme({
         borderRadius: "25px",
         border: "2px solid #EB882C",
         boxShadow: "0px 8px 0px #EB882C",
-        width: "18vw",
+        width: "16vw",
         minWidth: "225px",
         height: "55px",
         "&:hover": {
@@ -86,7 +86,7 @@ export const theme = createTheme({
         borderRadius: "25px",
         border: "2px solid #673FDA",
         boxShadow: "0px 8px 0px #673FDA",
-        width: "18vw",
+        width: "16vw",
         minWidth: "225px",
         height: "55px",
         "&:hover": {

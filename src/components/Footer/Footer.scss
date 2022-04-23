@@ -12,3 +12,16 @@
     color: #94A3B8;
   }
 }
+
+.mobile-footer {
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+
+  .sublink-text {
+    color: #fff;
+    &:hover {
+      color: #525252;
+    }
+  }
+}

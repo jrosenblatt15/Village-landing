@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .mobile-gradient-bg {
+    background: linear-gradient(180deg, #7790FF 0%, #81B3FF 61.98%, #BA97FF 86.46%, #FFB877 94.27%);
+  }
+
+  .mobile-whiteish-bg {
+    background: linear-gradient(180deg, #FFB877 0%, #FFFFFF 18.75%);
+  }
+
+  .mobile-footer-bg {
+    width: 100vw;
+    background: #B0BDD4;
+  }
+}
+
 .white-text {
   color: white;
 }

@@ -1,0 +1,33 @@
+.mobile-drawer {
+  backdrop-filter: blur(15px);
+}
+
+.mobile-drawer .MuiDrawer-paper {
+  width: 50%;
+  background: linear-gradient(180deg, rgba(66, 85, 102, 1) 0%, rgba(57, 68, 83, 1) 18.06%, rgba(50, 57, 69, 1) 39.64%, rgba(54, 60, 72, 1) 100%);
+  padding: 15px;
+
+  p {
+    color: #FFF;
+    font-weight: 600;
+  }
+
+  .MuiLink-root {
+    display: flex;
+    flex-direction: row;
+
+    svg {
+      fill: #FFF;
+    }
+
+    &:hover {
+      svg {
+        fill: #94A3B8;
+      }
+
+      p {
+        color: #94A3B8;
+      }
+    }
+  }
+}
