@@ -14,12 +14,12 @@ export const Headline = () => {
           <SvgIcon component={Farm} viewBox="0 0 677 451" style={{ width: "90%", height: "90%" }} />
         </Grid>
         <Grid item>
-          <Typography variant="h5" color="secondary" align="center">
+          <Typography variant="h5" color="primary" align="center" style={{ fontWeight: "600" }}>
             Impact Investing with Digital Assets 
           </Typography>
         </Grid>
-        <Grid item>
-          <Typography variant="body1" align="center">
+        <Grid item style={{ paddingTop: "0px" }}>
+          <Typography variant="body1" align="center" style={{ color: "#5E5E5E" }}>
             Leverage the blockchain to invest and earn or borrow and fund towards a better world using Village. 
           </Typography>
         </Grid>

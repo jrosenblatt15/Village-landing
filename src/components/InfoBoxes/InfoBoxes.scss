@@ -109,6 +109,10 @@
   .mobile-impact {
     padding: 15px;
     padding-bottom: 40px;
+
+    .MuiGrid-item {
+      padding-bottom: 24px;
+    }
   }
 
   .mobile-invest-accordion {
@@ -140,8 +144,4 @@
       background-color: #3E6955;
     }
   }
-}
-
-.blue {
-  color: #1CA2ED;
 }

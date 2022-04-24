@@ -17,11 +17,13 @@ export const InfoBoxes = () => {
       <Grid className="mobile-info-boxes-container" container direction="column">
         <Grid className="mobile-impact" container direction="column">
           <Grid item>
-            <Typography variant="h6">Expand your access to impact.</Typography>
+            <Typography variant="h5" color="secondary" style={{ fontWeight: "600" }}>
+              Expand your access to impact.
+            </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="body1">
-              Village uses <span className="blue">smart contracts</span> to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling <span className="blue">socially conscious investors to support inspiring causes</span> while borrowers appreciate <span className="blue">easier access to capital at improved rates</span>.
+            <Typography variant="body1" style={{ color: "#5E5E5E" }}>
+              Village uses smart contracts to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling socially conscious investors to support inspiring causes while borrowers appreciate easier access to capital at improved rates.
             </Typography>
           </Grid>
         </Grid>
