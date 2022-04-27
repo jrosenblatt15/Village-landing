@@ -46,7 +46,12 @@ export const InfoBoxes = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography className="white-text" variant="body2" align="center">
-                Tap into a new type of yield by committing capital to a borrower’s impact fund. For every cause, there will be a new fund for you to invest in.
+                Tap into a new type of yield by committing capital to a borrower’s fund.
+              </Typography>
+              <br />
+              <br />
+              <Typography className="white-text" variant="body2" align="center">
+                For every new borrower, pre-approved investors can commit capital and access financial returns on stablecoins, alongside real-world impact.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -70,7 +75,12 @@ export const InfoBoxes = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography className="white-text" variant="body2" align="center">
-                Impact-focused businesses, investment funds, and other types of institutions are likely eligible to borrow through Village! Head to our Borrower Form or Contact Us to start the process.
+                Mission-oriented businesses, Fintech lenders, investment funds, and other types of institutions may be eligible to borrow through Village. 
+              </Typography>
+              <br />
+              <br />
+              <Typography className="white-text" variant="body2" align="center">
+                Complete the Credit Application or contact us to start the process.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -164,7 +174,12 @@ export const InfoBoxes = () => {
               </Grid>
               <Grid item>
                 <Typography className="white-text" variant={isSmallScreen ? "body1" : "h6"} align={isMedScreen ? "center" : "right"}>
-                  Tap into a new type of yield by committing capital to a borrower’s impact fund. For every cause, there will be a new fund for you to invest in.
+                  Tap into a new type of yield by committing capital to a borrower’s fund.
+                </Typography>
+                <br />
+                <br />
+                <Typography className="white-text" variant={isSmallScreen ? "body1" : "h6"} align={isMedScreen ? "center" : "right"}>
+                  For every new borrower, pre-approved investors can commit capital and access financial returns on stablecoins, alongside real-world impact.
                 </Typography>
               </Grid>
             </Grid>
@@ -184,7 +199,12 @@ export const InfoBoxes = () => {
               </Grid>
               <Grid item>
                 <Typography className="white-text" variant={isSmallScreen ? "body1" : "h6"} align={isMedScreen ? "center" : "left"}>
-                  Impact-focused businesses, investment funds, and other types of institutions are likely eligible to borrow through Village! Head to our Borrower Form or Contact Us to start the process.
+                  Mission-oriented businesses, Fintech lenders, investment funds, and other types of institutions may be eligible to borrow through Village. 
+                </Typography>
+                <br />
+                <br />
+                <Typography className="white-text" variant={isSmallScreen ? "body1" : "h6"} align={isMedScreen ? "center" : "left"}>
+                  Complete the Credit Application or contact us to start the process.
                 </Typography>
               </Grid>
             </Grid>
