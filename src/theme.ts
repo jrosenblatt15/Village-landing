@@ -98,9 +98,11 @@ export const theme = createTheme({
     MuiLink: {
       root: {
         color: "#64748B",
+        fill: "#64748B",
         textDecoration: "none",
         "&:hover": {
           color: "#94A3B8",
+          fill: "#94A3B8",
           textDecoration: "none",
         },
       }

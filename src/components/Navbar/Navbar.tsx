@@ -72,7 +72,9 @@ export const Navbar = () => {
                   <SvgIcon component={Divider} />
                 </Grid>
                 <Grid item xs={1}>
-                  <SvgIcon component={Discord} className="navbar-discord" viewBox="0 0 26 32" style={{ width: "25px", height: "30px" }} />
+                  <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
+                    <SvgIcon component={Discord} className="navbar-discord" viewBox="0 0 26 32" style={{ width: "25px", height: "30px" }} />
+                  </Link>
                 </Grid>
               </>
             }

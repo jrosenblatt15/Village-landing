@@ -26,7 +26,7 @@ export const Headline = () => {
         <Grid item className="mobile-headline-buttons">
           <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
             <Button id="apply" className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="primary">
-              <Typography variant="body1">Apply to Borrow</Typography>
+              <Typography variant="body1">Credit Application</Typography>
             </Button>
           </Link>
         </Grid>
@@ -61,7 +61,7 @@ export const Headline = () => {
             <Grid item xs={12} sm={6}>
               <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
                 <Button id="apply" className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="primary">
-                  <Typography variant="body1">Apply to Borrow</Typography>
+                  <Typography variant="body1">Credit Application</Typography>
                 </Button>
               </Link>
             </Grid>

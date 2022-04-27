@@ -86,16 +86,9 @@ export const Footer = () => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" underline="none">
+              <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Discord
-                </Typography>
-              </Link>
-            </Grid>
-            <Grid item>
-              <Link href="#" underline="none">
-                <Typography className="sublink-text" variant="body2" align="left">
-                  Newsletter
                 </Typography>
               </Link>
             </Grid>
@@ -121,21 +114,14 @@ export const Footer = () => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" underline="none">
-                <Typography className="sublink-text" variant="body2" align="left">
-                  Partner
-                </Typography>
-              </Link>
-            </Grid>
-            <Grid item>
-              <Link href="#" underline="none">
+              <Link href="https://twitter.com/Village_fi" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Media
                 </Typography>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" underline="none">
+              <Link href="mailto:admin@impactvillage.io" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Say hello
                 </Typography>
@@ -157,12 +143,12 @@ export const Footer = () => {
             </Grid>
             <Grid container direction="column" spacing={2} alignItems="flex-start">
               <Grid item>
-                <Link href="#" underline="none">
+                <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
                   <SvgIcon component={Discord} className="footer-discord" viewBox="0 0 26 32" />
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" underline="none">
+                <Link href="https://twitter.com/Village_fi" underline="none">
                   <SvgIcon component={Twitter} className="footer-twitter" viewBox="0 0 32 25" />
                 </Link>
               </Grid>
