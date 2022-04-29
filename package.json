@@ -1,7 +1,7 @@
 {
   "name": "village-v2",
   "version": "0.1.0",
-  "homepage": "https://jrosenblatt15.github.io/Village",
+  "homepage": "https://impactvillage.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
