@@ -116,12 +116,12 @@ export const InfoBoxes = () => {
   const desktopInfoBoxes = () => {
     return (
       <>
-        <Grid container xs={10}>
+        <Grid container xs={11} style={{ marginTop: "-175px" }}>
           <Grid item xs={12} md={6}>
             <SvgIcon component={Farm} className={`info-box-icon ${isMedScreen && `medium`}`} viewBox="0 0 677 451" style={{ width: "90%", height: "90%" }} />
           </Grid>
         </Grid>
-        <Grid className={`info-boxes ${isMedScreen && `medium`}`} container direction="column" alignItems="center" xs={10}>
+        <Grid className={`info-boxes ${isMedScreen && `medium`}`} container direction="column" alignItems="center" xs={11}>
           <Grid className={`top-box ${isSmallScreen && `smaller`}`} container direction="row" alignItems="flex-end" justifyContent="flex-end" style={{ marginBottom: "40px" }}>
             <Grid item xs={12} md={6}>
               <Typography className="white-text" variant="h6" align={isSmallScreen ? "center" : "left"}>

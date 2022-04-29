@@ -39,7 +39,7 @@ export const Navbar = () => {
             {!isSmallScreen && 
               <>
                 <Grid item xs={1}>
-                  <img src={Logo} width={isMedScreen ? "40%" : "40%"} />
+                  <img src={Logo} width="85%"/>
                 </Grid>
                 <Grid className="divider" item xs={1}>
                   <SvgIcon component={Divider} />
