@@ -116,14 +116,14 @@ export const InfoBoxes = () => {
   const desktopInfoBoxes = () => {
     return (
       <>
-        <Grid container xs={11} style={{ marginTop: "-175px" }}>
+        <Grid container xs={11} style={{ marginTop: "-175px", marginBottom: "-50px", marginLeft: "85px" }}>
           <Grid item xs={12} md={6}>
-            <SvgIcon component={Farm} className={`info-box-icon ${isMedScreen && `medium`}`} viewBox="0 0 677 451" style={{ width: "90%", height: "90%" }} />
+            <SvgIcon component={Farm} className={`info-box-icon ${isMedScreen && `medium`}`} viewBox="0 0 677 451" style={{ width: "100%", height: "100%" }} />
           </Grid>
         </Grid>
         <Grid className={`info-boxes ${isMedScreen && `medium`}`} container direction="column" alignItems="center" xs={11}>
-          <Grid className={`top-box ${isSmallScreen && `smaller`}`} container direction="row" alignItems="flex-end" justifyContent="flex-end" style={{ marginBottom: "40px" }}>
-            <Grid item xs={12} md={6}>
+          <Grid className={`top-box ${isSmallScreen && `smaller`}`} container direction="row" alignItems="flex-end" justifyContent="flex-end">
+            <Grid item xs={12} md={5}>
               <Typography className="white-text" variant="h6" align={isSmallScreen ? "center" : "left"}>
                 Leverage the blockchain to invest and earn, or borrow and fund toward a better world using Village.
               </Typography>

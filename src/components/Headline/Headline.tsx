@@ -43,7 +43,7 @@ export const Headline = () => {
 
   const desktopHeadline = () => {
     return (
-      <Grid className="headline-container" container direction="row" alignItems="center" xs={10} style={isMedScreen ? { justifyContent: "center" } : {}}>
+      <Grid className="headline-container" container direction="row" alignItems="center" xs={11} style={isMedScreen ? { justifyContent: "center" } : {}}>
         <Grid item md={12} lg={6} style={{ marginBottom: "50px" }}>
           <Typography variant="h4" color="primary" style={ isSmallScreen ? { fontSize: "70px" } : {}}>
             Village
@@ -51,7 +51,7 @@ export const Headline = () => {
         </Grid>
 
         <Grid container direction="column" alignItems="center" md={12} lg={6}>
-          <Grid className={`subtext ${isMedScreen && `smaller`}`} item style={{ marginBottom: "55px" }}>
+          <Grid className={`subtext ${isMedScreen && `smaller`}`} item style={{ marginBottom: "55px", fontFamily: "fantabular-sans-mvb" }}>
               <Typography variant="h5" color="secondary" align="left">
                 Novel Impact Investing with Digital Assets 
               </Typography>

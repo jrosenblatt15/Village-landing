@@ -11,6 +11,8 @@
   }
 
   .top-box {
+    padding-top: 40px;
+    padding-bottom: 80px;
     padding-left: 80px;
     padding-right: 80px;
 
@@ -99,7 +101,10 @@
   top: 200px;
 
   &.medium {
-    top: 30%;
+    top: 55%;
+    margin-left: -85px;
+    width: 70% !important;
+    height: 70% !important;
   }
 }
 

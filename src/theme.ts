@@ -20,26 +20,31 @@ export const theme = createTheme({
   },
   typography: {
     h4: {
+      fontFamily: "pragmatica-extended",
       fontSize: "140px",
       fontWeight: "bold",
       lineHeight: "140px",
     },
     h5: {
+      fontFamily: "fantabular-sans-mvb",
       fontSize: "38px",
       fontWeight: "normal",
       lineHeight: "44px",
     },
     h6: {
+      fontFamily: "pragmatica",
       fontSize: "30px",
       fontWeight: "normal",
-      lineHeight: "40px",
+      lineHeight: "41px",
     },
     body1: {
+      fontFamily: "pragmatica",
       fontSize: "24px",
       fontWeight: "normal",
       lineHeight: "28px",
     },
     body2: {
+      fontFamily: "pragmatica",
       fontSize: "19px",
       fontWeight: "normal",
       lineHeight: "27px",
