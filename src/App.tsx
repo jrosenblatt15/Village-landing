@@ -38,9 +38,8 @@ function App() {
         <Navbar />
         <Headline />
         <InfoBoxes />
-        <PageBreak />
-        <HowItWorks />
         <LearnMore />
+        <PageBreak />
         <Footer />
       </Grid>
     );

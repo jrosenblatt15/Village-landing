@@ -126,7 +126,7 @@ export const InfoBoxes = () => {
           <Grid className={`top-box ${isSmallScreen && `smaller`}`} container direction="row" alignItems="flex-end" justifyContent="flex-end">
             <Grid item xs={12} md={5}>
               <Typography className="white-text" variant="h6" align={isSmallScreen ? "center" : "left"}>
-                Bringing sustainable yields to crypto, leverage the blockchain and stablecoins to invest and earn, or borrow and fund toward a better world using Village.
+                Bringing sustainable yields to crypto. Leverage the blockchain and stablecoins to invest and earn, or borrow and fund toward a better world using Village.
               </Typography>
             </Grid>
           </Grid>

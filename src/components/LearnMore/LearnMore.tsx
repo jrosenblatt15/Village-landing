@@ -16,7 +16,7 @@ export const LearnMore = () => {
       <Grid className="learn-more-container" container direction="column" xs={8}>
         <Grid className="learn-more-text" item>
           <Typography variant="body1" color="primary">
-          We take a data driven approach to underwriting every new borrower. Using our credit risk algorithm, we assess financial data to recommend a rate for your loan and inform Village lenders that provide the capital. We also provide a credit score to help you make informed decisions.
+          We take a data driven approach to underwriting every new borrower. Using our credit risk algorithm, we assess financial data to recommend a rate for your loan and inform Village lenders that provide the capital.
           </Typography>
         </Grid>
         <Grid item>
