@@ -129,6 +129,10 @@
     }
   }
 
+  .MuiAccordionDetails-root {
+    flex-direction: column;
+  }
+
   .mobile-invest-accordion {
     .MuiAccordionSummary-root {
       background-color: #398562;
