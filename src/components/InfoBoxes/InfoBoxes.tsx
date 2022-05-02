@@ -11,6 +11,7 @@ import { ReactComponent as Borrow } from "../../assets/borrow.svg";
 export const InfoBoxes = () => {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
   const isMedScreen = useMediaQuery("(max-width: 900px)");
+  const isLgScreen = useMediaQuery("(max-width: 1200px)") && !isMedScreen;
 
   const mobileInfoBoxes = () => {
     return (
@@ -116,16 +117,16 @@ export const InfoBoxes = () => {
   const desktopInfoBoxes = () => {
     return (
       <>
-        <Grid container xs={11} style={{ marginTop: "-175px", marginBottom: "-50px", marginLeft: "85px" }}>
+        <Grid container xs={11}>
           <Grid item xs={12} md={6}>
-            <SvgIcon component={Farm} className={`info-box-icon ${isMedScreen && `medium`}`} viewBox="0 0 677 451" style={{ width: "100%", height: "100%" }} />
+            <SvgIcon component={Farm} className={`info-box-icon ${isLgScreen && `large`} ${isMedScreen && `medium`}`} viewBox="0 0 677 451" style={{ width: "95%", height: "95%" }} />
           </Grid>
         </Grid>
         <Grid className={`info-boxes ${isMedScreen && `medium`}`} container direction="column" alignItems="center" xs={11}>
           <Grid className={`top-box ${isSmallScreen && `smaller`}`} container direction="row" alignItems="flex-end" justifyContent="flex-end">
             <Grid item xs={12} md={5}>
               <Typography className="white-text" variant="h6" align={isSmallScreen ? "center" : "left"}>
-                Leverage the blockchain to invest and earn, or borrow and fund toward a better world using Village.
+                Bringing sustainable yields to crypto, leverage the blockchain and stablecoins to invest and earn, or borrow and fund toward a better world using Village.
               </Typography>
             </Grid>
           </Grid>
@@ -133,21 +134,11 @@ export const InfoBoxes = () => {
           <Grid className={`expand ${isSmallScreen && `smaller`}`} container direction="column">
             <div className="white-box" style={ isSmallScreen ? { padding: "15px"} : {} }>
               <Grid container direction="row" xs={12} justifyContent="space-between" style={{ marginBottom: "20px" }}>
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} style={{ marginBottom: "35px" }}>
                   <Typography variant={isSmallScreen ? "h6" : "h5"} align={isSmallScreen ? "center" : "left"}>
                     Expand your access to impact
                   </Typography>
                 </Grid>
-                {!isSmallScreen && 
-                  <Grid item>
-                    <SvgIcon
-                      component={Chain}
-                      className="info-box-chain"
-                      viewBox="0 0 77 64"
-                      style={{ width: "77px", height: "64px" }}
-                    />
-                  </Grid>
-                }
               </Grid>
               <Grid item>
                 <Typography variant={isSmallScreen ? "body1" : "h6"} align={isSmallScreen ? "center" : "left"}>

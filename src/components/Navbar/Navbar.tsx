@@ -4,7 +4,7 @@ import { Button, Grid, Link, SvgIcon, Typography, useMediaQuery } from "@materia
 import Logo from "../../assets/logo.png";
 import { ReactComponent as Discord } from "../../assets/discord.svg";
 import { ReactComponent as Divider } from "../../assets/verticaldivider.svg";
-import { ReactComponent as MenuIcon } from "../../assets/menudrawer.svg";
+import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { MobileDrawer } from "./components/MobileDrawer";
 
 export const Navbar = () => {
@@ -30,7 +30,7 @@ export const Navbar = () => {
             direction="row"
             xs={12}
             md={10}
-            lg={7}
+            lg={8}
             spacing={2}
             justifyContent={isSmallScreen ? "space-between" : "center"}
             alignItems="center"
@@ -46,7 +46,7 @@ export const Navbar = () => {
                 </Grid> 
               </>       
             }
-            <Grid item xs={2} sm={2}>
+            <Grid item xs={2} sm={1}>
               <Link href="https://village.gitbook.io/village/" target="_blank" underline="none">
                 <Typography variant="body2">Docs</Typography>
               </Link>
@@ -56,12 +56,12 @@ export const Navbar = () => {
                 <Typography variant="body2">FAQs</Typography>
               </Link>
             </Grid>
-            <Grid item xs={3} sm={2}>
+            <Grid item xs={2} sm={2}>
               <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
                 <Typography variant="body2">Borrowing</Typography>
               </Link>
             </Grid>
-            <Grid item xs={3} sm={2}>
+            <Grid item xs={2} sm={2}>
               <Link href="mailto:admin@impactvillage.io" target="_blank" underline="none">
                 <Typography variant="body2">Contact</Typography>
               </Link>
@@ -71,10 +71,17 @@ export const Navbar = () => {
                 <Grid className="divider" item xs={1}>
                   <SvgIcon component={Divider} />
                 </Grid>
-                <Grid item xs={1}>
-                  <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
-                    <SvgIcon component={Discord} className="navbar-discord" viewBox="0 0 26 32" style={{ width: "25px", height: "30px" }} />
-                  </Link>
+                <Grid container xs={2} justifyContent="space-around">
+                  <Grid item>
+                    <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
+                      <SvgIcon component={Discord} className="navbar-discord" viewBox="0 0 26 32" style={{ width: "25px", height: "30px" }} />
+                    </Link>
+                  </Grid>
+                  <Grid item>
+                    <Link href="https://twitter.com/Village_fi" underline="none">
+                      <SvgIcon component={Twitter} className="footer-twitter" viewBox="0 0 32 25" style={{ width: "36px", height: "28px" }} />
+                    </Link>
+                  </Grid>
                 </Grid>
               </>
             }

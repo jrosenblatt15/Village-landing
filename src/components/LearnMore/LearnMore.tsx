@@ -16,13 +16,13 @@ export const LearnMore = () => {
       <Grid className="learn-more-container" container direction="column" xs={8}>
         <Grid className="learn-more-text" item>
           <Typography variant="body1" color="primary">
-            We offer both secured and unsecured loans on a borrower by borrower basis. Terms for each borrower fund is determined by using our Credit Risk Algorithm.
+          We take a data driven approach to underwriting every new borrower. Using our credit risk algorithm, we assess financial data to recommend a rate for your loan and inform Village lenders that provide the capital. We also provide a credit score to help you make informed decisions.
           </Typography>
         </Grid>
         <Grid item>
           <Link href="https://village.gitbook.io/village/" target="_blank" underline="none">
-            <Button variant="contained" color="secondary">
-              <Typography variant="body1">Learn More</Typography>
+            <Button variant="contained" color="secondary" style={{ minWidth: "438px" }}>
+              <Typography variant="body1">Learn about credit assessment</Typography>
             </Button>
           </Link>
         </Grid>

@@ -8,6 +8,7 @@ import { LearnMore } from './components/LearnMore/LearnMore';
 import { PageBreak } from './components/PageBreak/PageBreak';
 import { Footer } from './components/Footer/Footer';
 import { Grid, useMediaQuery } from '@material-ui/core';
+import { HowItWorks } from './components/HowItWorks/HowItWorks';
 
 function App() {
   const isSmallScreen = useMediaQuery('(max-width: 600px)');
@@ -37,8 +38,9 @@ function App() {
         <Navbar />
         <Headline />
         <InfoBoxes />
-        <LearnMore />
         <PageBreak />
+        <HowItWorks />
+        <LearnMore />
         <Footer />
       </Grid>
     );

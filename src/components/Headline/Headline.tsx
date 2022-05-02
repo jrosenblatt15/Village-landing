@@ -53,7 +53,7 @@ export const Headline = () => {
         <Grid container direction="column" alignItems="center" md={12} lg={6}>
           <Grid className={`subtext ${isMedScreen && `smaller`}`} item style={{ marginBottom: "55px", fontFamily: "fantabular-sans-mvb" }}>
               <Typography variant="h5" color="secondary" align="left">
-                Novel Impact Investing with Digital Assets 
+                Impact Investing with Digital Assets 
               </Typography>
           </Grid>
 
