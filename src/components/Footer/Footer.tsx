@@ -78,6 +78,11 @@ export const Footer = () => {
           <Grid item style={{ display: "flex", marginBottom: "20px", justifyContent: `${isMedScreen ? "center" : "flex-start"}` }}>
             <img src={TextLogo} alt="textlogo" width="55%" />
           </Grid>
+          <Grid item>
+            <Typography className="sublink-text" variant="body2" align="left">
+              Copyright © Village Finance 2022
+            </Typography>
+          </Grid>
         </Grid>
 
         <Grid container direction="row" xs={12} md={6} justifyContent={isSmallScreen ? "space-between" : "flex-end"}>
