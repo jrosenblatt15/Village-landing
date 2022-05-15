@@ -23,6 +23,11 @@
   padding: 15px;
   margin-bottom: 25px;
 
+  .mobile-headline-image {
+    display: flex;
+    justify-content: center;
+  }
+
   .MuiGrid-item {
     padding-top: 24px;
     padding-bottom: 24px;

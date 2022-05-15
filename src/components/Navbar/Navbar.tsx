@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 
 import { Button, Grid, Link, SvgIcon, Typography, useMediaQuery } from "@material-ui/core";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logoTextGreen.png";
 import { ReactComponent as Discord } from "../../assets/discord.svg";
 import { ReactComponent as Divider } from "../../assets/verticaldivider.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
@@ -38,12 +38,12 @@ export const Navbar = () => {
           >
             {!isSmallScreen && 
               <>
-                <Grid item xs={1}>
-                  <img src={Logo} width="85%"/>
+                <Grid container direction="row" xs={2}>
+                  <img src={Logo} width="100%" style={{ maxHeight: "42px" }} />
                 </Grid>
-                <Grid className="divider" item xs={1}>
-                  <SvgIcon component={Divider} />
-                </Grid> 
+                <div className="navbar-divider">
+                  <SvgIcon component={Divider} viewBox="0 0 1 31" />
+                </div>
               </>       
             }
             <Grid item xs={2} sm={1}>
@@ -68,9 +68,9 @@ export const Navbar = () => {
             </Grid>
             {!isSmallScreen &&
               <>
-                <Grid className="divider" item xs={1}>
-                  <SvgIcon component={Divider} />
-                </Grid>
+                <div className="navbar-divider">
+                  <SvgIcon component={Divider} viewBox="0 0 1 31" />
+                </div>
                 <Grid container xs={2} justifyContent="space-around">
                   <Grid item>
                     <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">

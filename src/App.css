@@ -4,6 +4,8 @@
 
 @media (max-width: 600px) {
   .mobile-gradient-bg {
+    width: 100%;
+    max-width: 600px;
     background: linear-gradient(180deg, #7790FF 0%, #81B3FF 61.98%, #BA97FF 86.46%, #FFB877 94.27%);
   }
 
