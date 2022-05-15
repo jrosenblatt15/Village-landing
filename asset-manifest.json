@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.af874592.css",
-    "main.js": "/static/js/main.f983f167.js",
+    "main.css": "/static/css/main.30b9fadb.css",
+    "main.js": "/static/js/main.afbe174d.js",
     "static/js/787.ff0ece1b.chunk.js": "/static/js/787.ff0ece1b.chunk.js",
     "static/media/background.png": "/static/media/background.c746423e36bed4a7e246.png",
     "static/media/farm.svg": "/static/media/farm.b470b35dc9d7225d82d6fcb9d6a092ed.svg",
+    "static/media/borrow1m.svg": "/static/media/borrow1m.087bebf51af1982898cab43d933956e1.svg",
+    "static/media/lowRates.svg": "/static/media/lowRates.330327b3d837b7f87e3b238623c1ca0b.svg",
+    "static/media/logoTextGreen.png": "/static/media/logoTextGreen.7dfd6ad087e4a5636e0d.png",
     "static/media/pagebreak.svg": "/static/media/pagebreak.adc40e9909e27fc36d364fa3574e66c7.svg",
     "static/media/textlogo.png": "/static/media/textlogo.3e035ecfe34664472dfd.png",
+    "static/media/tellerLogo.svg": "/static/media/tellerLogo.c004972036bdf1be20ca7d3ec51acd3d.svg",
+    "static/media/polygonLogo.svg": "/static/media/polygonLogo.4745d39818acca6941c47a4ecf6e3113.svg",
+    "static/media/truefiLogo.svg": "/static/media/truefiLogo.a869ea31b860c1032aedcc48e2269925.svg",
     "static/media/discord.svg": "/static/media/discord.6fc2d09ebcfd57e1574b67b684e7ca35.svg",
     "static/media/borrow.svg": "/static/media/borrow.5ee9e12b3ea2b1f1f4b61f63355176b1.svg",
     "static/media/invest.svg": "/static/media/invest.fe0239c1fac9f59b1e91befb8b6ded7d.svg",
@@ -16,12 +22,13 @@
     "static/media/subtract.svg": "/static/media/subtract.b8367cddc6c93faed9ef119125900bea.svg",
     "static/media/footerdivider.svg": "/static/media/footerdivider.ddad1c2b2459475ea8e32a5f345fd451.svg",
     "static/media/verticaldivider.svg": "/static/media/verticaldivider.d8303545d30025c578a3ec0de05c38be.svg",
-    "main.af874592.css.map": "/static/css/main.af874592.css.map",
-    "main.f983f167.js.map": "/static/js/main.f983f167.js.map",
+    "static/media/bigDivider.svg": "/static/media/bigDivider.814b46d66cd18a0d5028462e5d97d663.svg",
+    "main.30b9fadb.css.map": "/static/css/main.30b9fadb.css.map",
+    "main.afbe174d.js.map": "/static/js/main.afbe174d.js.map",
     "787.ff0ece1b.chunk.js.map": "/static/js/787.ff0ece1b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af874592.css",
-    "static/js/main.f983f167.js"
+    "static/css/main.30b9fadb.css",
+    "static/js/main.afbe174d.js"
   ]
 }
