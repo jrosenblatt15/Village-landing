@@ -5,6 +5,7 @@
   border: 3px solid #406D58;
   box-sizing: border-box;
   border-radius: 100px;
+  overflow: hidden;
 
   &.medium {
     padding-top: 100px;
@@ -67,7 +68,8 @@
     padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
-    border-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     box-shadow: 0px -25px 0px #292D2B;
 
     .invest-top {

@@ -11,7 +11,7 @@ export const Headline = () => {
     return (
       <Grid className="mobile-headline-container" container direction="column">
         <Grid className="mobile-headline-image" item>
-          <SvgIcon component={Farm} viewBox="0 0 677 451" style={{ width: "90%", height: "90%" }} />
+          <SvgIcon component={Farm} viewBox="0 0 760 492" style={{ width: "90%", height: "90%" }} />
         </Grid>
         <Grid item>
           <Typography variant="h5" color="primary" align="center" style={{ fontWeight: "600" }}>

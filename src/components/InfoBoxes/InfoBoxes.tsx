@@ -97,7 +97,7 @@ export const InfoBoxes = () => {
                 Lend USDC. Earn Yield. Make an impact.
               </Typography>
               <Typography className="white-text" variant="body2" align="center">
-                Access financial returns on stablecoins, alongside real-world impact. Village pre-approved borrowers deploy your capital to support real-world opportunities.  
+                By providing capital to debt capital market opportunities, investors are able to access an asset class that is largely limited to insitutional lenders, while also generating yields unaffected by crypto volatility.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -155,7 +155,7 @@ export const InfoBoxes = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography className="white-text" variant="body2" align="center">
-                Impact investments are made with the goal of generating measurable social and environmental impact alongside a financial return.
+                Access financial returns on stablecoins, alongside real-world impact. Village pre-approved borrowers deploy your capital to support real-world opportunities.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -169,7 +169,7 @@ export const InfoBoxes = () => {
       <>
         <Grid container xs={11}>
           <Grid item xs={12} md={6}>
-            <SvgIcon component={Farm} className={`info-box-icon ${isLgScreen && `large`} ${isMedScreen && `medium`}`} viewBox="0 0 677 451" style={{ width: "88%", height: "88%" }} />
+            <SvgIcon component={Farm} className={`info-box-icon ${isLgScreen && `large`} ${isMedScreen && `medium`}`} viewBox="0 0 760 492" style={{ width: "88%", height: "88%" }} />
           </Grid>
         </Grid>
         <Grid className={`info-boxes ${isMedScreen && `medium`}`} container direction="column" alignItems="center" xs={11}>
@@ -297,7 +297,7 @@ export const InfoBoxes = () => {
                     <br />
                     <br />
                     <Typography className="white-text" align="left" variant="body2">
-                      Finance without intermediaries means no extra fees and cheaper cost of capital. The cost of borrowing you see is what you get.
+                      Finance without intermediaries means no extra fees, cheaper cost of capital and faster execution. The cost of borrowing you see is what you get.
                     </Typography>
                   </Grid>
                 </Grid>
@@ -343,7 +343,7 @@ export const InfoBoxes = () => {
                   </Grid>
                   <Grid item>
                     <Typography className="white-text" variant="body2" align="left">
-                      Access financial returns on stablecoins, alongside real-world impact. Village pre-approved borrowers deploy your capital to support real-world opportunities.  
+                      Access financial returns on stablecoins alongside real-world impact. Village pre-approved borrowers deploy your capital to support real-world opportunities.
                     </Typography>
                   </Grid>
                 </Grid>
@@ -353,12 +353,12 @@ export const InfoBoxes = () => {
                 <Grid container direction="column" xs={5} spacing={2}>
                   <Grid item>
                     <Typography className="white-text" variant="body1" align="left" style={{ fontFamily: "fantabular-sans-mvb", fontWeight: "bold" }}>
-                      Access private debt
+                      Unlock Opportunities Beyond Crypto.
                     </Typography>
                   </Grid>
                   <Grid item>
                     <Typography className="white-text" variant="body2" align="left">
-                      A Village credit assessment results in a <span className="italic">recommended</span> rate, however the final decision is up to investors to lend capital. We provide all the financial data necessary to assess the borrowers you would like to support.
+                      By providing capital to debt capital market opportunities, investors are able to access an asset class that is largely limited to insitutional lenders, while also generating yields unaffected by crypto volatility.
                     </Typography>
                   </Grid>
                 </Grid>
