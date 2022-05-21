@@ -24,7 +24,7 @@ export const Footer = () => {
           </Grid>
           <Grid container direction="column" xs={6}>
             <Grid item>
-              <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
+              <Link href="/borrow" underline="none">
                 <Typography className="sublink-text" variant="body2" align="center">
                   Borrower Form
                 </Typography>
@@ -72,7 +72,7 @@ export const Footer = () => {
               </Typography>
             </Grid>
             <Grid item>
-              <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
+              <Link href="/borrow" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Borrower Form
                 </Typography>
@@ -114,7 +114,7 @@ export const Footer = () => {
               </Typography>
             </Grid>
             <Grid item>
-              <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
+              <Link href="/borrow" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Borrow
                 </Typography>

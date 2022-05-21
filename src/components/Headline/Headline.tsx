@@ -11,7 +11,7 @@ export const Headline = () => {
     return (
       <Grid className="mobile-headline-container" container direction="column">
         <Grid className="mobile-headline-image" item>
-          <SvgIcon component={Farm} viewBox="0 0 760 492" style={{ width: "90%", height: "90%" }} />
+          <SvgIcon component={Farm} viewBox="0 0 760 500" style={{ width: "90%", height: "90%" }} />
         </Grid>
         <Grid item>
           <Typography variant="h5" color="primary" align="center" style={{ fontWeight: "600" }}>
@@ -19,12 +19,12 @@ export const Headline = () => {
           </Typography>
         </Grid>
         <Grid item style={{ paddingTop: "0px" }}>
-          <Typography variant="body1" align="center" style={{ color: "#5E5E5E" }}>
-            We use decentralized finance and blockchain to enable impactful debt finance solutions in emerging and frontier markets.
+          <Typography variant="body2" align="center" style={{ color: "#5E5E5E" }}>
+            We use decentralized finance and blockchain to enable impactful debt financing for small businesses around the world. 
           </Typography>
         </Grid>
         <Grid item className="mobile-headline-buttons">
-          <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
+          <Link href="/borrow" underline="none">
             <Button id="apply" className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="primary">
               <Typography variant="body1">Credit Application</Typography>
             </Button>
@@ -52,14 +52,14 @@ export const Headline = () => {
 
         <Grid container direction="column" alignItems="center" md={12} lg={8}>
           <Grid className={`subtext ${isMedScreen && `smaller`}`} item style={{ marginBottom: "55px", fontFamily: "fantabular-sans-mvb" }}>
-              <Typography className="white-text" variant="h6" align="center">
-                We use decentralized finance and blockchain to enable impactful debt finance solutions in emerging and frontier markets.
+              <Typography className="white-text" variant="body2" align="center">
+                We use decentralized finance and blockchain to enable impactful debt financing for small businesses around the world. 
               </Typography>
           </Grid>
 
           <Grid container direction="row" justifyContent="center" xs={12}>
             <Grid item xs={12} sm={6}>
-              <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
+              <Link href="/borrow" underline="none">
                 <Button id="apply" className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="primary">
                   <Typography variant="body1">Credit Application</Typography>
                 </Button>

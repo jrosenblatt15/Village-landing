@@ -45,7 +45,7 @@ export const theme = createTheme({
     },
     body2: {
       fontFamily: "pragmatica",
-      fontSize: "19px",
+      fontSize: "22px",
       fontWeight: "normal",
       lineHeight: "27px",
     }

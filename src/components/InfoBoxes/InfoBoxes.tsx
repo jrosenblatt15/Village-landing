@@ -4,7 +4,6 @@ import { Accordion, AccordionDetails, AccordionSummary, Grid, Link, SvgIcon, Typ
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ParkOutlinedIcon from '@mui/icons-material/ParkOutlined';
 import { ReactComponent as Farm } from "../../assets/farm.svg";
-import { ReactComponent as Chain } from "../../assets/chain.svg";
 import { ReactComponent as Invest } from "../../assets/invest.svg";
 import { ReactComponent as Borrow } from "../../assets/borrow.svg";
 import { ReactComponent as Teller } from "../../assets/tellerLogo.svg";
@@ -29,8 +28,8 @@ export const InfoBoxes = () => {
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="body1" style={{ color: "#5E5E5E", marginBottom: "36px" }}>
-              Village uses smart contracts to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling socially conscious investors to support inspiring causes while borrowers appreciate easier access to capital at improved rates.
+            <Typography variant="body2" style={{ color: "#5E5E5E", marginBottom: "36px" }}>
+              Village uses smart contracts to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling crypto investors to support real-world causes while borrowers appreciate easier access to capital at improved rates.
             </Typography>
           </Grid>
           <Grid className="extra-info" container direction="column" spacing={2}>
@@ -65,7 +64,7 @@ export const InfoBoxes = () => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" style={{ color: "#5E5E5E" }}>
-                    Borrow for as low as 7%
+                    Borrow for as low as 5%
                   </Typography>
                 </Grid>
               </Grid>
@@ -94,7 +93,7 @@ export const InfoBoxes = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography className="white-text" variant="body1" align="center" style={{ fontWeight: "bold", marginBottom: "12px" }}>
-                Lend USDC. Earn Yield. Make an impact.
+                A New Type of Yield
               </Typography>
               <Typography className="white-text" variant="body2" align="center">
                 By providing capital to debt capital market opportunities, investors are able to access an asset class that is largely limited to insitutional lenders, while also generating yields unaffected by crypto volatility.
@@ -154,6 +153,9 @@ export const InfoBoxes = () => {
               </Grid>
             </AccordionSummary>
             <AccordionDetails>
+              <Typography className="white-text" variant="body1" align="center" style={{ fontWeight: "bold", marginBottom: "12px" }}>
+                Lend USDC. Make an Impact.
+              </Typography>
               <Typography className="white-text" variant="body2" align="center">
                 Access financial returns on stablecoins, alongside real-world impact. Village pre-approved borrowers deploy your capital to support real-world opportunities.
               </Typography>
@@ -169,19 +171,19 @@ export const InfoBoxes = () => {
       <>
         <Grid container xs={11}>
           <Grid item xs={12} md={6}>
-            <SvgIcon component={Farm} className={`info-box-icon ${isLgScreen && `large`} ${isMedScreen && `medium`}`} viewBox="0 0 760 492" style={{ width: "88%", height: "88%" }} />
+            <SvgIcon component={Farm} className={`info-box-icon ${isLgScreen && `large`} ${isMedScreen && `medium`}`} viewBox="0 0 760 500" style={{ width: "79%", height: "79%" }} />
           </Grid>
         </Grid>
         <Grid className={`info-boxes ${isMedScreen && `medium`}`} container direction="column" alignItems="center" xs={11}>
-          <Grid className={`top-box ${isSmallScreen && `smaller`}`} container direction="column" alignItems="flex-end" justifyContent="flex-end">
-            <Grid className="top-box-desc" item xs={12} md={6} lg={5}>
-              <Typography className="white-text" variant="body1" align={isSmallScreen ? "center" : "left"}>
-                Bringing sustainable yields to crypto. Leverage the blockchain and stablecoins to invest and earn, or borrow and fund toward a better world using Village.
+          <Grid className="top-box" container direction="column" alignItems="flex-end" justifyContent="flex-end">
+            <Grid className="top-box-desc" item xs={12} md={6} lg={6}>
+              <Typography className="white-text" variant="body2" align={isSmallScreen ? "center" : "left"}>
+                Bringing sustainable yields to crypto. Leverage the blockchain and stablecoins to invest and earn, or borrow and fund small businesses through Village.
               </Typography>
             </Grid>
-            <Grid container direction="row" xs={12} lg={7} spacing={2}>
+            <Grid container direction="row" xs={12} lg={7} spacing={2} style={{ marginTop: "25px" }}>
               <Grid className="our-partners" item xs={4}>
-                <Typography className="white-text" variant="body1" align="center">
+                <Typography className="white-text" variant="body1" align="center" style={{ fontFamily: "fantabular-sans-mvb", fontWeight: "bold" }}>
                   Our Partners
                 </Typography>
               </Grid>
@@ -199,13 +201,13 @@ export const InfoBoxes = () => {
             </Grid>
           </Grid>
 
-          <Grid className={`expand ${isSmallScreen && `smaller`}`} container direction="column">
+          <Grid className="expand" container direction="column">
             <div className="white-box" style={ isSmallScreen ? { padding: "15px"} : {} }>
               <Grid container direction="row" xs={12} justifyContent="space-between" style={{ marginBottom: "20px" }}>
                 <Grid item xs={12}>
                   <Typography
-                    variant={isSmallScreen ? "h6" : "h5"}
-                    align={isSmallScreen ? "center" : "left"}
+                    variant="h5"
+                    align="left"
                     style={{ color: "rgba(54, 72, 64, 1)" }}
                   >
                     Expand your access to impact
@@ -214,11 +216,11 @@ export const InfoBoxes = () => {
               </Grid>
               <Grid item>
                 <Typography
-                  variant="body1"
-                  align={isSmallScreen ? "center" : "left"}
+                  variant="body2"
+                  align="left"
                   style={{ color: "rgba(79, 79, 79, 1)" }}
                 >
-                  Village uses <span className="blue">smart contracts</span> to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling <span className="purple">socially conscious investors to support inspiring causes</span> while borrowers appreciate <span className="orange">easier access to capital at improved rates</span>.
+                  Village uses smart contracts to unlock capital opportunities without intermediaries. The result is an expanded access to impact, enabling crypto investors to support real-world causes while borrowers appreciate easier access to capital at improved rates.
                 </Typography>
               </Grid>
               <Grid className="extra-info" container direction="row" spacing={2}>
@@ -227,7 +229,7 @@ export const InfoBoxes = () => {
                   direction="column"
                   xs={10}
                   md={5}
-                  style={ isMedScreen || isSmallScreen ? { marginBottom: "30px" } : {} }
+                  style={ isMedScreen ? { marginBottom: "30px" } : {} }
                 >
                   <Grid item>
                     <SvgIcon component={Borrow1M} viewBox="0 0 174 165" style={{ minWidth: "100px", minHeight: "100px", marginBottom: "15px" }} />
@@ -238,7 +240,7 @@ export const InfoBoxes = () => {
                     </Typography>
                   </Grid>
                   <Grid item>
-                    <Typography variant="body1" style={{ color: "rgba(0, 0, 0, 0.9)" }}>
+                    <Typography variant="body2" style={{ color: "rgba(0, 0, 0, 0.9)" }}>
                       Maturity of 36 months or less, depending on loan terms
                     </Typography>
                   </Grid>
@@ -253,8 +255,8 @@ export const InfoBoxes = () => {
                     </Typography>
                   </Grid>
                   <Grid item>
-                    <Typography variant="body1" style={{ color: "rgba(0, 0, 0, 0.9)" }}>
-                      Borrow for as low as 7%
+                    <Typography variant="body2" style={{ color: "rgba(0, 0, 0, 0.9)" }}>
+                      Borrow for as low as 5%
                     </Typography>
                   </Grid>
                 </Grid>
@@ -264,7 +266,7 @@ export const InfoBoxes = () => {
 
           <Grid className="bottom-box" container direction="column">
             <Grid
-              className={`borrow ${isLgScreen && `large`} ${isMedScreen && `medium`} ${isSmallScreen && `smaller`}`}
+              className={`borrow ${isLgScreen && `large`} ${isMedScreen && `medium`}`}
               container
               direction="row"
               alignItems="center"
@@ -278,7 +280,7 @@ export const InfoBoxes = () => {
                     viewBox="0 0 60 60"
                     style={{ width: "60px", height: "60px" }}
                   />
-                  <Typography id="borrow-text" className="white-text" variant={isSmallScreen ? "h6" : "h5"} align="center">
+                  <Typography id="borrow-text" className="white-text" variant="h5" align="center">
                     Borrow
                   </Typography>
                 </div>
@@ -327,7 +329,7 @@ export const InfoBoxes = () => {
               </Grid>
             </Grid>
             <Grid
-              className={`invest ${isLgScreen && `large`} ${isMedScreen && `medium`} ${isSmallScreen && `smaller`}`}
+              className={`invest ${isLgScreen && `large`} ${isMedScreen && `medium`}`}
               container
               direction="row"
               alignItems="center"

@@ -57,7 +57,7 @@ export const Navbar = () => {
               </Link>
             </Grid>
             <Grid item xs={2} sm={2}>
-              <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none">
+              <Link href="/borrow" underline="none">
                 <Typography variant="body2">Borrowing</Typography>
               </Link>
             </Grid>
