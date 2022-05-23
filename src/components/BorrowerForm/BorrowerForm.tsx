@@ -1,6 +1,6 @@
 import "./BorrowerForm.scss";
 
-import { Button, Grid, Link, TextField, Typography } from "@material-ui/core";
+import { Button, Grid, Link, TextField, Typography, useMediaQuery } from "@material-ui/core";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
@@ -29,6 +29,7 @@ type FormData = {
 }
 
 export const BorrowerForm = () => {
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
   let navigate = useNavigate();
 
   const emailjsPubKey = process.env.REACT_APP_EMAILJS_PUB_KEY ? process.env.REACT_APP_EMAILJS_PUB_KEY : "";
@@ -67,8 +68,8 @@ export const BorrowerForm = () => {
   };
 
   return (
-    <>
-      <form className="borrow-form" onSubmit={handleSubmit}>
+    <div className="borrow-page-bg">
+      <form className={`borrow-form ${isSmallScreen && `smaller`}`} onSubmit={handleSubmit}>
         <Link href="/" underline="none" style={{ marginBottom: "30px" }}>
           <img src={TextLogo} width="100%" alt="logo-link" style={{ maxWidth: "300px", maxHeight: "30%" }} />
         </Link>
@@ -81,13 +82,13 @@ export const BorrowerForm = () => {
           xs={11}
           md={7}
           spacing={3}>
-            <Grid item>
-              <Typography variant="h5">
+            <Grid className="title" item>
+              <Typography variant={isSmallScreen ? "h6" : "h5"}>
                 Borrower Form
               </Typography>
             </Grid>
-            <Grid item>
-              <Typography variant="body2">
+            <Grid className="description" item>
+              <Typography variant={isSmallScreen ? "body1" : "body2"}>
                 Tell us more about your business so we can determine how a loan from Village can help. Upon receiving your application, a team member will contact you shortly to further discuss what is needed for a risk assessment.
               </Typography>
             </Grid>
@@ -191,18 +192,7 @@ export const BorrowerForm = () => {
                   onChange={(e) => setFormValues({ ...formValues, businessAddr: { ...formValues.businessAddr, line2: e.target.value } })}
                 />
               </Grid>
-              <Grid className="text-field-grid" item xs={4}>
-                <TextField
-                  className="text-field"
-                  id="city-input"
-                  name="city"
-                  label="City"
-                  type="text"
-                  value={formValues.businessAddr.city}
-                  onChange={(e) => setFormValues({ ...formValues, businessAddr: { ...formValues.businessAddr, city: e.target.value } })}
-                />
-              </Grid>
-              <Grid className="text-field-grid" item xs={4}>
+              <Grid className="text-field-grid" item xs={12} xl={4}>
                 <TextField
                   className="text-field"
                   id="state-input"
@@ -213,7 +203,18 @@ export const BorrowerForm = () => {
                   onChange={(e) => setFormValues({ ...formValues, businessAddr: { ...formValues.businessAddr, state: e.target.value } })}
                 />
               </Grid>
-              <Grid className="text-field-grid" item xs={4}>
+              <Grid className="text-field-grid" item xs={12} md={6} xl={4}>
+                <TextField
+                  className="text-field"
+                  id="city-input"
+                  name="city"
+                  label="City"
+                  type="text"
+                  value={formValues.businessAddr.city}
+                  onChange={(e) => setFormValues({ ...formValues, businessAddr: { ...formValues.businessAddr, city: e.target.value } })}
+                />
+              </Grid>
+              <Grid className="text-field-grid" item xs={12} md={6} xl={4}>
                 <TextField
                   className="text-field"
                   id="zip-input"
@@ -255,6 +256,6 @@ export const BorrowerForm = () => {
             </Button>
         </Grid>
       </form>
-    </>
+    </div>
   );
 }

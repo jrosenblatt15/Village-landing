@@ -3,18 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #88BAA3;
   height: 100%;
-  width: 100%;
+  width: 95vw;
   padding: 70px;
 
   .field-container {
+    align-content: center;
     background-color: #C8E0D5;
     border-radius: 30px;
-    padding: 25px;
+    padding: 15px;
 
     .text-field-grid {
-      width: 100%;
+      width: 95%;
       padding-left: 0px !important;
       padding-right: 0px !important;
   
@@ -22,5 +22,46 @@
         width: 100%;
       }
     }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 95%;
+  
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  
+    .description {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 95%;
+  
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
+
+  &.smaller {
+    width: 90vw;
+    padding: 30px;
+
+    .MuiInputLabel-root {
+      font-size: 16px;
+    }
+
+    .MuiTypography-body1 {
+      font-size: 18px;
+    }
+  }
+}
+
+.borrow-page-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #88BAA3;
 }
