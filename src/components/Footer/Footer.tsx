@@ -1,6 +1,7 @@
 import "./Footer.scss";
 
-import { Grid, Link, SvgIcon, Typography, useMediaQuery } from "@material-ui/core";
+import { Grid, Link as MuiLink, SvgIcon, Typography, useMediaQuery } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import { ReactComponent as Discord } from "../../assets/discord.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { ReactComponent as Subtract } from "../../assets/subtract.svg";
@@ -24,25 +25,25 @@ export const Footer = () => {
           </Grid>
           <Grid container direction="column" xs={6}>
             <Grid item>
-              <Link href="/borrow" underline="none">
+              <Link className="internal-link" to="/borrow">
                 <Typography className="sublink-text" variant="body2" align="center">
                   Borrower Form
                 </Typography>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="https://village.gitbook.io/village/" target="_blank" underline="none">
+              <MuiLink href="https://village.gitbook.io/village/" target="_blank" underline="none">
                 <Typography className="sublink-text" variant="body2" align="center">
                   Docs
                 </Typography>
-              </Link>
+              </MuiLink>
             </Grid>
             <Grid item>
-              <Link href="https://village.gitbook.io/village/faqs/" target="_blank" underline="none">
+              <MuiLink href="https://village.gitbook.io/village/faqs/" target="_blank" underline="none">
                 <Typography className="sublink-text" variant="body2" align="center">
                   FAQs
                 </Typography>
-              </Link>
+              </MuiLink>
             </Grid>
           </Grid>
         </Grid>
@@ -72,32 +73,32 @@ export const Footer = () => {
               </Typography>
             </Grid>
             <Grid item>
-              <Link href="/borrow" underline="none">
+              <Link className="internal-link" to="/borrow">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Borrower Form
                 </Typography>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="https://village.gitbook.io/village/" target="_blank" underline="none">
+              <MuiLink href="https://village.gitbook.io/village/" target="_blank" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Docs
                 </Typography>
-              </Link>
+              </MuiLink>
             </Grid>
             <Grid item>
-              <Link href="https://village.gitbook.io/village/faqs/" target="_blank" underline="none">
+              <MuiLink href="https://village.gitbook.io/village/faqs/" target="_blank" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   FAQs
                 </Typography>
-              </Link>
+              </MuiLink>
             </Grid>
             <Grid item>
-              <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
+              <MuiLink href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Discord
                 </Typography>
-              </Link>
+              </MuiLink>
             </Grid>
           </Grid>
 
@@ -114,25 +115,25 @@ export const Footer = () => {
               </Typography>
             </Grid>
             <Grid item>
-              <Link href="/borrow" underline="none">
+              <Link className="internal-link" to="/borrow">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Borrow
                 </Typography>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="https://twitter.com/Village_fi" underline="none">
+              <MuiLink href="https://twitter.com/Village_fi" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Media
                 </Typography>
-              </Link>
+              </MuiLink>
             </Grid>
             <Grid item>
-              <Link href="mailto:admin@impactvillage.io" underline="none">
+              <MuiLink href="mailto:admin@impactvillage.io" underline="none">
                 <Typography className="sublink-text" variant="body2" align="left">
                   Say hello
                 </Typography>
-              </Link>
+              </MuiLink>
             </Grid>
           </Grid>
 
@@ -150,19 +151,19 @@ export const Footer = () => {
             </Grid>
             <Grid container direction="column" spacing={2} alignItems="flex-start">
               <Grid item>
-                <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
+                <MuiLink href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
                   <SvgIcon component={Discord} className="footer-discord" viewBox="0 0 26 32" />
-                </Link>
+                </MuiLink>
               </Grid>
               <Grid item>
-                <Link href="https://twitter.com/Village_fi" underline="none">
+                <MuiLink href="https://twitter.com/Village_fi" underline="none">
                   <SvgIcon component={Twitter} className="footer-twitter" viewBox="0 0 32 25" />
-                </Link>
+                </MuiLink>
               </Grid>
               <Grid item>
-                <Link href="#" underline="none">
+                <MuiLink href="#" underline="none">
                   <SvgIcon component={Subtract} className="footer-other-icon" viewBox="0 0 21 29" />
-                </Link>
+                </MuiLink>
               </Grid>
             </Grid>
           </Grid>

@@ -1,6 +1,7 @@
 import "./Headline.scss";
 
-import { Button, Grid, Link, SvgIcon, Typography, useMediaQuery } from "@material-ui/core";
+import { Button, Grid, Link as MuiLink, SvgIcon, Typography, useMediaQuery } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import { ReactComponent as Farm } from "../../assets/farm.svg";
 
 export const Headline = () => {
@@ -24,18 +25,18 @@ export const Headline = () => {
           </Typography>
         </Grid>
         <Grid item className="mobile-headline-buttons">
-          <Link href="/borrow" underline="none">
+          <Link className="internal-link" to="/borrow">
             <Button id="apply" className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="primary">
               <Typography variant="body1">Credit Application</Typography>
             </Button>
           </Link>
         </Grid>
         <Grid item className="mobile-headline-buttons">
-          <Link href="https://village.gitbook.io/village/" target="_blank" underline="none">
+          <MuiLink href="https://village.gitbook.io/village/" target="_blank" underline="none">
             <Button className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="secondary">
               <Typography variant="body1">Learn More</Typography>
             </Button>
-          </Link>
+          </MuiLink>
         </Grid>
       </Grid>
     );
@@ -59,18 +60,18 @@ export const Headline = () => {
 
           <Grid container direction="row" justifyContent="center" xs={12}>
             <Grid item xs={12} sm={6}>
-              <Link href="/borrow" underline="none">
+              <Link className="internal-link" to="/borrow">
                 <Button id="apply" className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="primary">
                   <Typography variant="body1">Credit Application</Typography>
                 </Button>
               </Link>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Link href="https://village.gitbook.io/village/" target="_blank" underline="none">
+              <MuiLink href="https://village.gitbook.io/village/" target="_blank" underline="none">
                 <Button className={`headline-button ${isSmallScreen && `smaller`}`} variant="contained" color="secondary">
                   <Typography variant="body1">Learn More</Typography>
                 </Button>
-              </Link>
+              </MuiLink>
             </Grid>
           </Grid>
         </Grid>

@@ -7,7 +7,7 @@ import { LearnMore } from './components/LearnMore/LearnMore';
 import { PageBreak } from './components/PageBreak/PageBreak';
 import { Footer } from './components/Footer/Footer';
 import { Grid, useMediaQuery } from '@material-ui/core';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { BorrowerForm } from './components/BorrowerForm/BorrowerForm';
 
 function App() {
@@ -49,12 +49,10 @@ function App() {
     <div className="App">
       <body>
         <Grid container direction="column" alignItems="center" xs={12}>
-          <BrowserRouter>
             <Routes>
               <Route path="/" element={ isSmallScreen ? mobileApp() : desktopApp() } />
               <Route path="/borrow" element={<BorrowerForm />} />
             </Routes>
-          </BrowserRouter>
         </Grid>
       </body>
     </div>

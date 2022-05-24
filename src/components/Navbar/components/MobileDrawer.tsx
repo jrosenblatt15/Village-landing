@@ -1,6 +1,7 @@
 import "./MobileDrawer.scss";
 
 import { Drawer, Grid, IconButton, Link, SvgIcon, Typography } from "@material-ui/core";
+import { Link as InternalLink } from "react-router-dom";
 import { useState } from "react";
 import { ReactComponent as MenuIcon } from "../../../assets/menudrawer.svg";
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
@@ -33,10 +34,10 @@ export const MobileDrawer = () => {
             </Link>
           </Grid>
           <Grid item>
-            <Link href="https://impactvillage.us20.list-manage.com/subscribe?u=12cf845d2866bf06908250683&id=7a6b4425d0" target="_blank" underline="none" onClick={() => setIsOpen(false)}>
+            <InternalLink className="MuiLink-root" to="/borrow" onClick={() => setIsOpen(false)}>
               <SvgIcon component={AccountBalanceOutlinedIcon} style={{ width: "28px", height: "28px", paddingRight: "8px" }} />
               <Typography variant="body1">Borrowing</Typography>
-            </Link>
+            </InternalLink>
           </Grid>
           <Grid item>
             <Link href="mailto:admin@impactvillage.io" target="_blank" underline="none" onClick={() => setIsOpen(false)}>

@@ -22,3 +22,12 @@
 .white-text {
   color: white;
 }
+
+.internal-link {
+  color: #64748B;
+  text-decoration: none;
+}
+
+.internal-link:hover {
+  color: #94A3B8;
+}

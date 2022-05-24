@@ -1,6 +1,7 @@
 import "./Navbar.scss";
 
-import { Button, Grid, Link, SvgIcon, Typography, useMediaQuery } from "@material-ui/core";
+import { Grid, Link as MuiLink, SvgIcon, Typography, useMediaQuery } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logoTextGreen.png";
 import { ReactComponent as Discord } from "../../assets/discord.svg";
 import { ReactComponent as Divider } from "../../assets/verticaldivider.svg";
@@ -47,24 +48,24 @@ export const Navbar = () => {
               </>       
             }
             <Grid item xs={2} sm={1}>
-              <Link href="https://village.gitbook.io/village/" target="_blank" underline="none">
+              <MuiLink href="https://village.gitbook.io/village/" target="_blank" underline="none">
                 <Typography variant="body2">Docs</Typography>
-              </Link>
+              </MuiLink>
             </Grid>
             <Grid item xs={2} sm={2}>
-              <Link href="https://village.gitbook.io/village/faqs/" target="_blank" underline="none">
+              <MuiLink href="https://village.gitbook.io/village/faqs/" target="_blank" underline="none">
                 <Typography variant="body2">FAQs</Typography>
-              </Link>
+              </MuiLink>
             </Grid>
             <Grid item xs={2} sm={2}>
-              <Link href="/borrow" underline="none">
+              <Link className="internal-link" to="/borrow">
                 <Typography variant="body2">Borrowing</Typography>
               </Link>
             </Grid>
             <Grid item xs={2} sm={2}>
-              <Link href="mailto:admin@impactvillage.io" target="_blank" underline="none">
+              <MuiLink href="mailto:admin@impactvillage.io" target="_blank" underline="none">
                 <Typography variant="body2">Contact</Typography>
-              </Link>
+              </MuiLink>
             </Grid>
             {!isSmallScreen &&
               <>
@@ -73,14 +74,14 @@ export const Navbar = () => {
                 </div>
                 <Grid container xs={2} justifyContent="space-around">
                   <Grid item>
-                    <Link href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
+                    <MuiLink href="https://discord.gg/tzXZdCCPdd" target="_blank" underline="none">
                       <SvgIcon component={Discord} className="navbar-discord" viewBox="0 0 26 32" style={{ width: "25px", height: "30px" }} />
-                    </Link>
+                    </MuiLink>
                   </Grid>
                   <Grid item>
-                    <Link href="https://twitter.com/Village_fi" underline="none">
+                    <MuiLink href="https://twitter.com/Village_fi" target="_blank" underline="none">
                       <SvgIcon component={Twitter} className="footer-twitter" viewBox="0 0 32 25" style={{ width: "36px", height: "28px" }} />
-                    </Link>
+                    </MuiLink>
                   </Grid>
                 </Grid>
               </>

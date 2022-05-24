@@ -1,6 +1,7 @@
 import "./BorrowerForm.scss";
 
-import { Button, Grid, Link, TextField, Typography, useMediaQuery } from "@material-ui/core";
+import { Button, Grid, TextField, Typography, useMediaQuery } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
@@ -70,7 +71,7 @@ export const BorrowerForm = () => {
   return (
     <div className="borrow-page-bg">
       <form className={`borrow-form ${isSmallScreen && `smaller`}`} onSubmit={handleSubmit}>
-        <Link href="/" underline="none" style={{ marginBottom: "30px" }}>
+        <Link className="internal-link" to="/" style={{ marginBottom: "30px" }}>
           <img src={TextLogo} width="100%" alt="logo-link" style={{ maxWidth: "300px", maxHeight: "30%" }} />
         </Link>
         <Grid
